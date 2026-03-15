@@ -1,6 +1,6 @@
 ﻿namespace ConsoleApp1.Domain;
 
-public class Camera(string name) : Equipment(name)
+public class Camera(string name, string description) : Equipment(name, description)
 {
     
 }
