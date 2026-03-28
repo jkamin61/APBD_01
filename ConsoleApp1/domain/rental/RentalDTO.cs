@@ -3,7 +3,7 @@ using ConsoleApp1.Domain.User;
 
 namespace ConsoleApp1.Domain.Rental;
 
-public class Rental
+public class RentalDTO
 {
     public int Id { get; }
     public UserDTO User { get; }
@@ -13,7 +13,7 @@ public class Rental
     public DateTime? ReturnedAt { get; private set; }
     public decimal PenaltyFee { get; private set; }
 
-    public Rental(int id, UserDTO user, EquipmentDTO equipment, DateTime rentedAt, DateTime dueDate)
+    public RentalDTO(int id, UserDTO user, EquipmentDTO equipment, DateTime rentedAt, DateTime dueDate)
     {
         Id = id;
         User = user;
